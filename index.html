@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Semana 2</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header>
+        <h2>Login</h2>
+    </header>
+    <main>
+        <section id="opc1">
+            <form>
+                <header>
+                    <h4>CREATE YOUR ACCOUNT</h2>
+                    <p>This is step 1</p>
+                </header>
+                <br>
+                <input class="txtopc1" type="email" placeholder="Email" required pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}" ><br><br><br>
+                <input class="txtopc1" type="password" placeholder="Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" ><br><br><br>
+                <input class="txtopc1" type="password" placeholder="Confirm Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" ><br><br><br><br><br>
+                <button class="btn1">Next</button>
+            </form>
+       </section>
+
+       <br><br>
+
+       <section id="opc2">
+            <form>
+                <header>
+                    <h2>Sing Up</h2>
+                </header>
+                <label>First name</label><br>
+                <input class="txtopc2" type="text" minlength="6" required pattern="[A-Z a-z]+" ><br><br>
+                <label>Age</label><br>
+                <input class="txtopc2" type="number" max="120" required><br><br>
+                <label>Income</label><br>
+                <input class="txtopc2" type="text" minlength="6" required pattern="[A-Z a-z]+" ><br><br>
+                <label>More Info</label><br>
+                <textarea></textarea><br><br>
+                <label>Gender</label><br>
+                <input class="radopc2" type="radio" name="genero" value="M">Male
+                <input class="radopc2" type="radio" name="genero" value="F">Female
+                <input class="radopc2" type="radio" name="genero" value="T">Trans
+                <br><br>
+                <label>Plan</label><br>
+                <select>
+                    <option selected disabled>Select Plan</option>                    
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                </select>
+                <br><br>
+                <input class="chkopc2" type="checkbox" value="suscripcion">Subscribe to Newsletter
+                <br><br>
+                <button class="btn2">Update</button>
+            </form>
+       </section> 
+
+       <br><br>
+
+       <section id="opc3">
+            <form>
+
+                <form>
+                    <header>
+                        <h3>Contact Form</h3>
+                    </header>
+                    <label>First name</label><br>
+                    <input class="txtopc3" type="text" placeholder="John" minlength="6" required pattern="[A-Z a-z]+" ><br><br>
+                    <label>Last name</label><br>
+                    <input class="txtopc3" type="text" placeholder="Doe" minlength="6" required pattern="[A-Z a-z]+" ><br><br>                    
+                    <label>Email</label><br>
+                    <input class="txtopc3" type="email" placeholder="you@domain.com" required pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}" ><br><br>
+                    <label>Message</label><br>
+                    <textarea placeholder="Enter your message here ..." minlength="20" maxlength="140" required pattern="[A-Z a-z 0-9]+" ></textarea><br><br>
+                    <footer>
+                        <button class="btn3">Submit</button>
+                    </footer>
+                </form>
+                    
+            </form>
+       </section>
+   
+       <br><br>
+       
+    </main>
+   
+</body>
+</html>
